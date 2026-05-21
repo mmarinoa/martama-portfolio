@@ -19,7 +19,7 @@ function Index() {
         <div className="grid md:grid-cols-12 gap-10 items-end">
           <div className="md:col-span-9">
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight">
-              Marta Mariño <span className="italic text-foreground/80">Alvite</span>
+              Marta Mariño Alvite
             </h1>
             <p className="mt-8 max-w-2xl text-lg md:text-xl text-muted-foreground leading-relaxed">
               Desarrolladora junior de aplicaciones multiplataforma, centrada en
