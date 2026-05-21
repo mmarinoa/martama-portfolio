@@ -92,11 +92,6 @@ function SobreMi() {
                 <li>Subdelegada durante ambos cursos.</li>
               </ul>
             </article>
-            <article>
-              <p className="font-mono text-xs text-muted-foreground">Anterior</p>
-              <h3 className="font-serif text-2xl mt-1">Grado en Ingeniería Informática</h3>
-              <p className="text-muted-foreground">1º curso realizado · formación universitaria previa.</p>
-            </article>
           </div>
         </div>
       </section>
