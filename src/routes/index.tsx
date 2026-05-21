@@ -19,7 +19,7 @@ function Index() {
         <div className="grid md:grid-cols-12 gap-10 items-end">
           <div className="md:col-span-9">
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight">
-              Marta Mariño <span className="italic text-foreground/80">Alvite</span>
+              Marta Mariño Alvite
             </h1>
             <p className="mt-8 max-w-2xl text-lg md:text-xl text-muted-foreground leading-relaxed">
               Desarrolladora junior de aplicaciones multiplataforma, centrada en
@@ -36,12 +36,14 @@ function Index() {
         </div>
 
         <div className="mt-14 flex flex-wrap gap-4">
-          <Link
-            to="/proyectos"
+          <a
+            href="https://github.com/mmarinoa"
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground text-sm tracking-wide hover:opacity-90 transition"
           >
             Ver proyectos →
-          </Link>
+          </a>
           <Link
             to="/contacto"
             className="inline-flex items-center px-6 py-3 border border-foreground/30 text-sm tracking-wide hover:bg-foreground hover:text-background transition"
@@ -61,7 +63,7 @@ function Index() {
           <div className="md:col-span-8 text-lg leading-relaxed text-foreground/85 space-y-5">
             <p>
               Actualmente finalizo el <em>CFGS en Desarrollo de Aplicaciones Multiplataforma</em>
-              y realizo prácticas DUAL en <strong>ilatina</strong>, donde he impulsado la creación
+              {" "}y realizo prácticas DUAL en <strong>ilatina</strong>, donde he impulsado la creación
               del área de automatización de la empresa.
             </p>
             <p>

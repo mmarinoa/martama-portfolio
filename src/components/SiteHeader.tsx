@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const nav = [
   { to: "/", label: "Inicio" },
@@ -21,27 +22,29 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
-          {nav.map((n) => (
-            <Link
-              key={n.to}
-              to={n.to}
-              className="text-sm text-foreground/75 hover:text-foreground transition-colors"
-              activeProps={{ className: "text-foreground border-b border-gold pb-0.5" }}
-              activeOptions={{ exact: n.to === "/" }}
-            >
-              {n.label}
-            </Link>
-          ))}
-        </nav>
-
-        <button
-          onClick={() => setOpen((v) => !v)}
-          aria-label="Abrir menú"
-          className="md:hidden text-sm tracking-wider uppercase"
-        >
-          {open ? "Cerrar" : "Menú"}
-        </button>
+        <div className="flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-8">
+            {nav.map((n) => (
+              <Link
+                key={n.to}
+                to={n.to}
+                className="text-sm text-foreground/75 hover:text-foreground transition-colors"
+                activeProps={{ className: "text-foreground border-b border-gold pb-0.5" }}
+                activeOptions={{ exact: n.to === "/" }}
+              >
+                {n.label}
+              </Link>
+            ))}
+          </nav>
+          <ThemeToggle />
+          <button
+            onClick={() => setOpen((v) => !v)}
+            aria-label="Abrir menú"
+            className="md:hidden text-sm tracking-wider uppercase"
+          >
+            {open ? "Cerrar" : "Menú"}
+          </button>
+        </div>
       </div>
 
       {open && (

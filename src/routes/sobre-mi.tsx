@@ -26,9 +26,8 @@ const competencias = [
 
 const idiomas = [
   { lang: "Español", lvl: "Nativo" },
+  { lang: "Gallego", lvl: "Nativo" },
   { lang: "Inglés", lvl: "B2 Trinity certificado · preparando C1 Cambridge" },
-  { lang: "Francés", lvl: "Básico" },
-  { lang: "Portugués", lvl: "Nociones básicas" },
 ];
 
 const tech = [
@@ -92,11 +91,6 @@ function SobreMi() {
                 <li>Seleccionada entre el alumnado para entrevista de prácticas DUAL en empresa.</li>
                 <li>Subdelegada durante ambos cursos.</li>
               </ul>
-            </article>
-            <article>
-              <p className="font-mono text-xs text-muted-foreground">Anterior</p>
-              <h3 className="font-serif text-2xl mt-1">Grado en Ingeniería Informática</h3>
-              <p className="text-muted-foreground">1º curso realizado · formación universitaria previa.</p>
             </article>
           </div>
         </div>
