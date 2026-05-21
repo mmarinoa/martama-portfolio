@@ -26,9 +26,8 @@ const competencias = [
 
 const idiomas = [
   { lang: "Español", lvl: "Nativo" },
+  { lang: "Gallego", lvl: "Nativo" },
   { lang: "Inglés", lvl: "B2 Trinity certificado · preparando C1 Cambridge" },
-  { lang: "Francés", lvl: "Básico" },
-  { lang: "Portugués", lvl: "Nociones básicas" },
 ];
 
 const tech = [
