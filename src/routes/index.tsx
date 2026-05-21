@@ -36,12 +36,14 @@ function Index() {
         </div>
 
         <div className="mt-14 flex flex-wrap gap-4">
-          <Link
-            to="/proyectos"
+          <a
+            href="https://github.com/mmarinoa"
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground text-sm tracking-wide hover:opacity-90 transition"
           >
             Ver proyectos →
-          </Link>
+          </a>
           <Link
             to="/contacto"
             className="inline-flex items-center px-6 py-3 border border-foreground/30 text-sm tracking-wide hover:bg-foreground hover:text-background transition"
