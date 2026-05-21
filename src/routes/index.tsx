@@ -63,7 +63,7 @@ function Index() {
           <div className="md:col-span-8 text-lg leading-relaxed text-foreground/85 space-y-5">
             <p>
               Actualmente finalizo el <em>CFGS en Desarrollo de Aplicaciones Multiplataforma</em>
-              y realizo prácticas DUAL en <strong>ilatina</strong>, donde he impulsado la creación
+              {" "}y realizo prácticas DUAL en <strong>ilatina</strong>, donde he impulsado la creación
               del área de automatización de la empresa.
             </p>
             <p>
