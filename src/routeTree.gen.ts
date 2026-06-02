@@ -14,6 +14,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ProyectosRouteImport } from './routes/proyectos'
 import { Route as ExperienciaRouteImport } from './routes/experiencia'
 import { Route as ContactoRouteImport } from './routes/contacto'
+import { Route as AutomatizacionesRouteImport } from './routes/automatizaciones'
 import { Route as IndexRouteImport } from './routes/index'
 
 const SobreMiRoute = SobreMiRouteImport.update({
@@ -41,6 +42,11 @@ const ContactoRoute = ContactoRouteImport.update({
   path: '/contacto',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AutomatizacionesRoute = AutomatizacionesRouteImport.update({
+  id: '/automatizaciones',
+  path: '/automatizaciones',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -49,6 +55,7 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/automatizaciones': typeof AutomatizacionesRoute
   '/contacto': typeof ContactoRoute
   '/experiencia': typeof ExperienciaRoute
   '/proyectos': typeof ProyectosRoute
@@ -57,6 +64,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/automatizaciones': typeof AutomatizacionesRoute
   '/contacto': typeof ContactoRoute
   '/experiencia': typeof ExperienciaRoute
   '/proyectos': typeof ProyectosRoute
@@ -66,6 +74,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/automatizaciones': typeof AutomatizacionesRoute
   '/contacto': typeof ContactoRoute
   '/experiencia': typeof ExperienciaRoute
   '/proyectos': typeof ProyectosRoute
@@ -76,6 +85,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/automatizaciones'
     | '/contacto'
     | '/experiencia'
     | '/proyectos'
@@ -84,6 +94,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/automatizaciones'
     | '/contacto'
     | '/experiencia'
     | '/proyectos'
@@ -92,6 +103,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/automatizaciones'
     | '/contacto'
     | '/experiencia'
     | '/proyectos'
@@ -101,6 +113,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AutomatizacionesRoute: typeof AutomatizacionesRoute
   ContactoRoute: typeof ContactoRoute
   ExperienciaRoute: typeof ExperienciaRoute
   ProyectosRoute: typeof ProyectosRoute
@@ -145,6 +158,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/automatizaciones': {
+      id: '/automatizaciones'
+      path: '/automatizaciones'
+      fullPath: '/automatizaciones'
+      preLoaderRoute: typeof AutomatizacionesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -157,6 +177,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AutomatizacionesRoute: AutomatizacionesRoute,
   ContactoRoute: ContactoRoute,
   ExperienciaRoute: ExperienciaRoute,
   ProyectosRoute: ProyectosRoute,
