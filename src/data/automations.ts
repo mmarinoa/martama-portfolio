@@ -9,6 +9,12 @@ import seo1 from "@/assets/projects/seo-wp-1.png.asset.json";
 import seo2 from "@/assets/projects/seo-wp-2.png.asset.json";
 import seo3 from "@/assets/projects/seo-wp-3.png.asset.json";
 import seo4 from "@/assets/projects/seo-wp-4.png.asset.json";
+import leads1 from "@/assets/projects/leads-b2b-1.png.asset.json";
+import leads2 from "@/assets/projects/leads-b2b-2.png.asset.json";
+import leads3 from "@/assets/projects/leads-b2b-3.png.asset.json";
+import leads4 from "@/assets/projects/leads-b2b-4.png.asset.json";
+import leads5 from "@/assets/projects/leads-b2b-5.png.asset.json";
+import leads6 from "@/assets/projects/leads-b2b-6.png.asset.json";
 
 export type AutomationImage = { src: string; alt: string };
 export type AutomationProject = {
@@ -94,6 +100,47 @@ export const automationProjects: AutomationProject[] = [
       { src: seo2.url, alt: "Agentes de IA encargados de sintetizar, redactar y humanizar el contenido" },
       { src: seo3.url, alt: "Generación de imagen destacada mediante la API de Replicate" },
       { src: seo4.url, alt: "Publicación automática en WordPress y asociación de la imagen al post" },
+    ],
+  },
+  {
+    slug: "prospeccion-leads-b2b",
+    title: "Sistema automatizado de prospección y enriquecimiento de leads B2B",
+    shortDescription:
+      "Pipeline de prospección B2B que localiza empresas por zona usando Google Maps, enriquece sus datos desde la web, identifica contactos relevantes y redacta correos personalizados con IA antes de enviarlos automáticamente.",
+    description:
+      "Workflow completo de prospección comercial que parte de una hoja de Google Sheets con localidades objetivo. El sistema consulta la API de Google Maps para encontrar empresas relacionadas con un sector concreto y extrae datos clave (nombre, dirección, teléfono, web, ubicación, valoraciones, horarios, tipo de negocio y enlace de Maps), guardándolos en MySQL sin duplicados. Después valida las webs encontradas, obtiene un resumen de la actividad de cada empresa con IA, detecta URLs relevantes (contacto, aviso legal, política de privacidad) y extrae emails, NIF y posibles personas responsables. Cuando los datos automáticos no son suficientes, recurre a fuentes externas y a agentes de IA con búsqueda web para identificar al contacto de interés. Finalmente selecciona empresas pendientes, redacta correos personalizados con un agente de IA especializado, los envía y actualiza la base de datos para evitar reenvíos duplicados.",
+    useCase: "Prospección y enriquecimiento de leads B2B con comunicación personalizada automatizada.",
+    bullets: [
+      "Busca empresas por localidad y sector con Google Maps API",
+      "Extrae datos comerciales relevantes de cada empresa",
+      "Valida webs y resume su actividad con IA",
+      "Detecta emails, teléfonos, NIF y páginas legales",
+      "Identifica personas de interés o responsables",
+      "Completa datos con IA cuando no se encuentran",
+      "Redacta correos personalizados por lead",
+      "Envía emails y evita duplicados en la base de datos",
+    ],
+    tags: [
+      "n8n",
+      "Google Maps API",
+      "Google Sheets",
+      "MySQL",
+      "OpenAI",
+      "Web scraping",
+      "Lead generation",
+      "B2B prospecting",
+      "Email automation",
+      "Data enrichment",
+      "IA generativa",
+      "Automatización comercial",
+    ],
+    images: [
+      { src: leads1.url, alt: "Descubrir, mapear y guardar empresas: lectura de localidades, consulta a Google Maps y almacenamiento en MySQL con estado NEW o NO_WEB" },
+      { src: leads2.url, alt: "Validación de webs y resumen de actividad de cada empresa mediante IA" },
+      { src: leads3.url, alt: "Búsqueda de emails en home y contacto y extracción de URLs relevantes (aviso legal, política de privacidad)" },
+      { src: leads4.url, alt: "Extracción de NIF desde aviso legal y política de privacidad" },
+      { src: leads5.url, alt: "Búsqueda de persona de interés / CEO mediante fuentes externas y agente IA con búsqueda web" },
+      { src: leads6.url, alt: "Redacción y envío de correos personalizados con IA y actualización del estado de mailing en MySQL" },
     ],
   },
 ];
