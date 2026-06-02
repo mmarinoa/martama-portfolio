@@ -9,6 +9,12 @@ import seo1 from "@/assets/projects/seo-wp-1.png.asset.json";
 import seo2 from "@/assets/projects/seo-wp-2.png.asset.json";
 import seo3 from "@/assets/projects/seo-wp-3.png.asset.json";
 import seo4 from "@/assets/projects/seo-wp-4.png.asset.json";
+import leads1 from "@/assets/projects/leads-b2b-1.png.asset.json";
+import leads2 from "@/assets/projects/leads-b2b-2.png.asset.json";
+import leads3 from "@/assets/projects/leads-b2b-3.png.asset.json";
+import leads4 from "@/assets/projects/leads-b2b-4.png.asset.json";
+import leads5 from "@/assets/projects/leads-b2b-5.png.asset.json";
+import leads6 from "@/assets/projects/leads-b2b-6.png.asset.json";
 
 export type AutomationImage = { src: string; alt: string };
 export type AutomationProject = {
