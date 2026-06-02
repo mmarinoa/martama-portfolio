@@ -5,6 +5,10 @@ import img4 from "@/assets/projects/bot-wa-4.png.asset.json";
 import img5 from "@/assets/projects/bot-wa-5.png.asset.json";
 import img6 from "@/assets/projects/bot-wa-6.png.asset.json";
 import img7 from "@/assets/projects/bot-wa-7.png.asset.json";
+import seo1 from "@/assets/projects/seo-wp-1.png.asset.json";
+import seo2 from "@/assets/projects/seo-wp-2.png.asset.json";
+import seo3 from "@/assets/projects/seo-wp-3.png.asset.json";
+import seo4 from "@/assets/projects/seo-wp-4.png.asset.json";
 
 export type AutomationImage = { src: string; alt: string };
 export type AutomationProject = {
