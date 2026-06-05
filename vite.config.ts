@@ -6,10 +6,16 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-// Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-// @cloudflare/vite-plugin builds from this — wrangler.jsonc main alone is insufficient.
+// Force-enable Nitro for deployments outside Lovable (e.g. Vercel).
+// When deploying to Vercel, set preset to "vercel" so Nitro emits the
+// `.vercel/output` directory Vercel expects.
+const isVercel = !!process.env.VERCEL;
+
 export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
+    ...(isVercel
+      ? { nitro: { preset: "vercel" } }
+      : { nitro: true }),
   },
 });
