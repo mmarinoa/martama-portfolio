@@ -29,7 +29,7 @@ function Index() {
             </p>
           </div>
           <div className="md:col-span-3 md:text-right space-y-1 text-sm text-muted-foreground">
-            <p>Bergondo, A Coruña</p>
+            <p>A Coruña, Galicia, España</p>
             <p>España</p>
             <p className="text-foreground mt-3">Actualmente trabajando</p>
           </div>
