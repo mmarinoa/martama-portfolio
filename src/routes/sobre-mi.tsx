@@ -59,15 +59,16 @@ function SobreMi() {
           <div className="md:col-span-8 text-lg leading-relaxed text-foreground/85 space-y-5">
             <p>
               Desarrolladora junior de aplicaciones multiplataforma especializada en automatización de
-              procesos, integración de APIs e IA aplicada. Actualmente finalizando el CFGS en
-              Desarrollo de Aplicaciones Multiplataforma y realizando prácticas DUAL en ilatina.
+              procesos, integración de APIs e IA aplicada. Tras finalizar el CFGS en
+              Desarrollo de Aplicaciones Multiplataforma, la empresa ilatina me contrató tras mis prácticas DUAL
+              y actualmente trabajo en su área de DevOps y automatización con un horario de 8:00 a 15:00.
             </p>
             <p>
               He impulsado la creación del área de automatización de la empresa, desarrollando
               soluciones con n8n, Make, bots de WhatsApp, Meta API, Google APIs, WordPress, VPS
-              y servicios desplegados en servidor. Busco incorporarme a una empresa tecnológica
-              donde seguir creciendo en desarrollo de software, automatización, IA, datos y
-              consultoría tecnológica.
+              y servicios desplegados en servidor. Llevo ya <strong>6 meses de experiencia</strong> en el área
+              y sigo abierta a nuevas oportunidades donde seguir creciendo en desarrollo de software,
+              automatización, IA, datos y consultoría tecnológica.
             </p>
           </div>
         </div>

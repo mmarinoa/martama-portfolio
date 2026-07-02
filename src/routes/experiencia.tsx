@@ -26,10 +26,10 @@ function Experiencia() {
         <div className="container-prose py-16">
           <article className="grid md:grid-cols-12 gap-12">
             <aside className="md:col-span-4 space-y-2">
-              <p className="font-mono text-xs text-muted-foreground">Enero 2026 — Junio 2026</p>
-              <p className="text-sm text-foreground/80">A Coruña · Prácticas DUAL DAM</p>
+              <p className="font-mono text-xs text-muted-foreground">Enero 2026 — Actualidad</p>
+              <p className="text-sm text-foreground/80">A Coruña · DevOps & Automatización</p>
               <p className="mt-4 inline-block text-xs uppercase tracking-[0.18em] text-gold border border-gold/40 px-2 py-1">
-                En curso
+                En activo
               </p>
             </aside>
             <div className="md:col-span-8">
@@ -72,9 +72,10 @@ function Experiencia() {
               <div className="mt-10 border-l-2 border-gold pl-6 py-2 bg-muted/40">
                 <p className="uppercase-eyebrow">Logro destacado</p>
                 <p className="mt-2 text-foreground/90 leading-relaxed">
-                  Aprendizaje autónomo de <strong>n8n</strong> desde cero y desarrollo de una primera
-                  solución funcional en aproximadamente dos semanas, incluyendo bot de WhatsApp,
-                  derivación a humano y resolución de incidencias técnicas de configuración.
+                  Tras finalizar las prácticas DUAL, la empresa decidió contratarme. En total
+                  acumulo ya <strong>6 meses de experiencia</strong> en el área de DevOps y automatización,
+                  habiendo aprendido <strong>n8n</strong> desde cero y desarrollado soluciones de producción
+                  en tiempo récord.
                 </p>
               </div>
             </div>
@@ -85,19 +86,23 @@ function Experiencia() {
       <section className="border-t border-border">
         <div className="container-prose py-16">
           <p className="uppercase-eyebrow">Disponibilidad</p>
-          <div className="mt-6 grid md:grid-cols-4 gap-8 text-sm">
-            {[
-              ["Incorporación", "A partir de junio de 2026"],
-              ["Ubicación", "A Coruña y alrededores"],
-              ["Modalidad", "Presencial · híbrida · remoto"],
-              ["Movilidad", "Carnet y vehículo propio"],
-            ].map(([k, v]) => (
-              <div key={k}>
-                <p className="text-muted-foreground">{k}</p>
-                <p className="mt-1 text-foreground font-serif text-lg">{v}</p>
-              </div>
-            ))}
+          <div className="mt-6 grid md:text-muted-foreground">
+            <p className="text-muted-foreground">Horario actual</p>
+            <p className="mt-1 text-foreground font-serif text-lg">8:00 — 15:00 en ilatina</p>
           </div>
+          <div>
+            <p className="text-muted-foreground">Disponibilidad entrevistas</p>
+            <p className="mt-1 text-foreground font-serif text-lg">Tardes · flexible</p>
+          </div>
+          <div>
+            <p className="text-muted-foreground">Modalidad preferida</p>
+            <p className="mt-1 text-foreground font-serif text-lg">Presencial · híbrida · remoto</p>
+          </div>
+          <div>
+            <p className="text-muted-foreground">Ubicación</p>
+            <p className="mt-1 text-foreground font-serif text-lg">A Coruña y alrededores</p>
+          </div>
+        </div>
         </div>
       </section>
     </>
