@@ -86,23 +86,24 @@ function Experiencia() {
       <section className="border-t border-border">
         <div className="container-prose py-16">
           <p className="uppercase-eyebrow">Disponibilidad</p>
-          <div className="mt-6 grid md:text-muted-foreground">
-            <p className="text-muted-foreground">Horario actual</p>
-            <p className="mt-1 text-foreground font-serif text-lg">8:00 — 15:00 en ilatina</p>
+          <div className="mt-6 grid md:grid-cols-4 gap-8 text-sm">
+            <div>
+              <p className="text-muted-foreground">Horario actual</p>
+              <p className="mt-1 text-foreground font-serif text-lg">8:00 — 15:00 en ilatina</p>
+            </div>
+            <div>
+              <p className="text-muted-foreground">Disponibilidad entrevistas</p>
+              <p className="mt-1 text-foreground font-serif text-lg">Tardes · flexible</p>
+            </div>
+            <div>
+              <p className="text-muted-foreground">Modalidad preferida</p>
+              <p className="mt-1 text-foreground font-serif text-lg">Presencial · híbrida · remoto</p>
+            </div>
+            <div>
+              <p className="text-muted-foreground">Ubicación</p>
+              <p className="mt-1 text-foreground font-serif text-lg">A Coruña y alrededores</p>
+            </div>
           </div>
-          <div>
-            <p className="text-muted-foreground">Disponibilidad entrevistas</p>
-            <p className="mt-1 text-foreground font-serif text-lg">Tardes · flexible</p>
-          </div>
-          <div>
-            <p className="text-muted-foreground">Modalidad preferida</p>
-            <p className="mt-1 text-foreground font-serif text-lg">Presencial · híbrida · remoto</p>
-          </div>
-          <div>
-            <p className="text-muted-foreground">Ubicación</p>
-            <p className="mt-1 text-foreground font-serif text-lg">A Coruña y alrededores</p>
-          </div>
-        </div>
         </div>
       </section>
     </>
