@@ -1,21 +1,3 @@
-import img1 from "@/assets/projects/bot-wa-1.png.asset.json";
-import img2 from "@/assets/projects/bot-wa-2.png.asset.json";
-import img3 from "@/assets/projects/bot-wa-3.png.asset.json";
-import img4 from "@/assets/projects/bot-wa-4.png.asset.json";
-import img5 from "@/assets/projects/bot-wa-5.png.asset.json";
-import img6 from "@/assets/projects/bot-wa-6.png.asset.json";
-import img7 from "@/assets/projects/bot-wa-7.png.asset.json";
-import seo1 from "@/assets/projects/seo-wp-1.png.asset.json";
-import seo2 from "@/assets/projects/seo-wp-2.png.asset.json";
-import seo3 from "@/assets/projects/seo-wp-3.png.asset.json";
-import seo4 from "@/assets/projects/seo-wp-4.png.asset.json";
-import leads1 from "@/assets/projects/leads-b2b-1.png.asset.json";
-import leads2 from "@/assets/projects/leads-b2b-2.png.asset.json";
-import leads3 from "@/assets/projects/leads-b2b-3.png.asset.json";
-import leads4 from "@/assets/projects/leads-b2b-4.png.asset.json";
-import leads5 from "@/assets/projects/leads-b2b-5.png.asset.json";
-import leads6 from "@/assets/projects/leads-b2b-6.png.asset.json";
-
 export type AutomationImage = { src: string; alt: string };
 export type AutomationProject = {
   slug: string;
@@ -27,6 +9,10 @@ export type AutomationProject = {
   tags: string[];
   images: AutomationImage[];
 };
+
+const wa = (n: number) => `/workflows/whatsapp/0${n}-bot-wa.png`;
+const seo = (n: number) => `/workflows/seo/0${n}-seo-wp.png`;
+const leads = (n: number) => `/workflows/leads/0${n}-leads-b2b.png`;
 
 export const automationProjects: AutomationProject[] = [
   {
@@ -58,13 +44,13 @@ export const automationProjects: AutomationProject[] = [
       "Human handoff",
     ],
     images: [
-      { src: img1.url, alt: "Entrada del bot: webhook, tipo de evento, control ON/OFF y detección del país" },
-      { src: img2.url, alt: "Agente IA con transcripción de audios, memoria, documentos y derivación a humano" },
-      { src: img3.url, alt: "Registro y actualización de datos del contacto en Google Sheets" },
-      { src: img4.url, alt: "Reaviso automático a las 72 horas — parte 1" },
-      { src: img5.url, alt: "Reaviso automático a las 72 horas — parte 2" },
-      { src: img6.url, alt: "Captura de formularios web desde Wix hacia Google Sheets" },
-      { src: img7.url, alt: "Subworkflow de derivación a humano" },
+      { src: wa(1), alt: "Entrada del bot: webhook, tipo de evento, control ON/OFF y detección del país" },
+      { src: wa(2), alt: "Agente IA con transcripción de audios, memoria, documentos y derivación a humano" },
+      { src: wa(3), alt: "Registro y actualización de datos del contacto en Google Sheets" },
+      { src: wa(4), alt: "Reaviso automático a las 72 horas — parte 1" },
+      { src: wa(5), alt: "Reaviso automático a las 72 horas — parte 2" },
+      { src: wa(6), alt: "Captura de formularios web desde Wix hacia Google Sheets" },
+      { src: wa(7), alt: "Subworkflow de derivación a humano" },
     ],
   },
   {
@@ -96,10 +82,10 @@ export const automationProjects: AutomationProject[] = [
       "Automatización de contenido",
     ],
     images: [
-      { src: seo1.url, alt: "Fuente de información: SerpAPI, selección de resultados y extracción de contenido desde URLs" },
-      { src: seo2.url, alt: "Agentes de IA encargados de sintetizar, redactar y humanizar el contenido" },
-      { src: seo3.url, alt: "Generación de imagen destacada mediante la API de Replicate" },
-      { src: seo4.url, alt: "Publicación automática en WordPress y asociación de la imagen al post" },
+      { src: seo(1), alt: "Fuente de información: SerpAPI, selección de resultados y extracción de contenido desde URLs" },
+      { src: seo(2), alt: "Agentes de IA encargados de sintetizar, redactar y humanizar el contenido" },
+      { src: seo(3), alt: "Generación de imagen destacada mediante la API de Replicate" },
+      { src: seo(4), alt: "Publicación automática en WordPress y asociación de la imagen al post" },
     ],
   },
   {
@@ -135,12 +121,12 @@ export const automationProjects: AutomationProject[] = [
       "Automatización comercial",
     ],
     images: [
-      { src: leads1.url, alt: "Descubrir, mapear y guardar empresas: lectura de localidades, consulta a Google Maps y almacenamiento en MySQL con estado NEW o NO_WEB" },
-      { src: leads2.url, alt: "Validación de webs y resumen de actividad de cada empresa mediante IA" },
-      { src: leads3.url, alt: "Búsqueda de emails en home y contacto y extracción de URLs relevantes (aviso legal, política de privacidad)" },
-      { src: leads4.url, alt: "Extracción de NIF desde aviso legal y política de privacidad" },
-      { src: leads5.url, alt: "Búsqueda de persona de interés / CEO mediante fuentes externas y agente IA con búsqueda web" },
-      { src: leads6.url, alt: "Redacción y envío de correos personalizados con IA y actualización del estado de mailing en MySQL" },
+      { src: leads(1), alt: "Descubrir, mapear y guardar empresas: lectura de localidades, consulta a Google Maps y almacenamiento en MySQL con estado NEW o NO_WEB" },
+      { src: leads(2), alt: "Validación de webs y resumen de actividad de cada empresa mediante IA" },
+      { src: leads(3), alt: "Búsqueda de emails en home y contacto y extracción de URLs relevantes (aviso legal, política de privacidad)" },
+      { src: leads(4), alt: "Extracción de NIF desde aviso legal y política de privacidad" },
+      { src: leads(5), alt: "Búsqueda de persona de interés / CEO mediante fuentes externas y agente IA con búsqueda web" },
+      { src: leads(6), alt: "Redacción y envío de correos personalizados con IA y actualización del estado de mailing en MySQL" },
     ],
   },
 ];
