@@ -28,8 +28,8 @@ function Contacto() {
         Hablemos sobre el próximo paso.
       </h1>
       <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-        Disponible a partir de junio de 2026 para incorporarme en modalidad presencial, híbrida o
-        remota. No dudes en escribirme — respondo en menos de 24 horas laborables.
+        Actualmente trabajando en la empresa ilatina de 8:00 a 15:00.
+        No dudes en escribirme — respondo en menos de 24 horas.
       </p>
 
       <div className="mt-16 grid md:grid-cols-12 gap-12">

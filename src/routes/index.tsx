@@ -31,7 +31,7 @@ function Index() {
           <div className="md:col-span-3 md:text-right space-y-1 text-sm text-muted-foreground">
             <p>Bergondo, A Coruña</p>
             <p>España</p>
-            <p className="text-foreground mt-3">Disponible · Junio 2026</p>
+            <p className="text-foreground mt-3">Actualmente trabajando</p>
           </div>
         </div>
 
