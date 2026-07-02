@@ -80,10 +80,27 @@ function Proyectos() {
             <div className="mt-6 space-y-4 text-foreground/85 leading-relaxed">
               {featured.body.map((p, i) => <p key={i}>{p}</p>)}
             </div>
+
+            <div className="mt-8">
+              <p className="uppercase-eyebrow mb-3">Demostración en vídeo</p>
+              <div className="relative w-full overflow-hidden border border-border" style={{ aspectRatio: "16 / 9" }}>
+                <iframe
+                  className="absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/6jsJPLRfErA?si=hAUutfaLWoN29iA9"
+                  title="Sistema de triaje inteligente para urgencias — demostración en vídeo"
+                  frameBorder={0}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+
             <div className="mt-8 border-t border-border pt-6">
               <p className="uppercase-eyebrow">Objetivo</p>
               <p className="mt-2 font-serif text-xl italic text-foreground/90">{featured.goal}</p>
             </div>
+
           </div>
         </div>
       </section>
